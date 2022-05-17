@@ -1,0 +1,17 @@
+.figure-container--slider {
+  justify-content: center;
+}
+.etiqueta {
+  display: flex;
+  justify-content: center;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+}
+.figure-container--card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
+}

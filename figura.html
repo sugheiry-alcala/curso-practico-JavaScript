@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)">
+  <title>Figuras geométricas</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Figuras geométricas
+    </h1>
+    <p>Este es el primer taller del curso práctico de JavaScript</p>
+  </header>
+  <section class="figure-container--slider">
+    <article class="figure-container--card">
+      <div class="figure-card">
+        <h2 class="figure-card--title">Cuadrado</h2>
+        <h3 class="figure-instruccion">Calcula el área y perímetro de un cuadrado</h3>
+        <label for="inputCuadrado" class="etiqueta">
+          Escribe cuánto mide cada lado de tu cuadrado:
+        </label>
+        <input id="inputCuadrado" type="number" />
+        <button type="button" class="boton" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular el área
+        </button>
+      </div>
+    </article>
+    <article class="figure-container--card">
+      <div class="figure-card">
+        <h2 class="figure-card--title">Círculo</h2>
+        <h3 class="figure-instruccion">Calcula el diámetro y perímetro y área de un círculo</h3>
+        <label for="inputCirculo" class="etiqueta">
+          Escribe cuánto mide cada lado de tu cuadrado:
+        </label>
+        <input id="inputCirculo" type="number" />
+        <button type="button" class="boton" onclick="calcularDiametroCirculo()">
+          Calcular diámetro
+        </button>
+        <button type="button" class="boton" onclick="calcularAreaCirculo()">
+          Calcular el área
+        </button>
+        <button type="button" class="boton" onclick="calcularperimetroCirculo()">
+          Calcular el perimetro
+        </button>
+      </div>
+    </article>
+    <article class="figure-container--card">
+      <div class="figure-card">
+        <h2 class="figure-card--title">Triángulo</h2>
+        <h3 class="figure-instruccion">Calcula el Area y Perímetro de un triángulo</h3>
+        <label for="inputTriangulo" class="etiqueta">
+          Escribe cuánto mide lado A del Triangulo:
+        </label>
+        <input id="inputA" type="number" />
+        <label for="inputA" class="etiqueta">
+          Escribe cuánto mide lado B del triangulo:
+        </label>
+        <input id="inputB" type="number" />
+        <label for="inputB" class="etiqueta">
+          Escribe cuánto mide la base del triangulo:
+        </label>
+        <input id="inputBase" type="number" />
+        <button type="button" class="boton" onclick="calcularperimetroTriangulo()">
+          Calcular perimetro
+        </button>
+        <button type="button" class="boton" yonclick="calcularareaTriangulo()">
+          Calcular el área
+        </button>
+      </div>
+    </article>
+  </section>
+  <script src="./figura.js"></script>
+</body>
+
+</html>
